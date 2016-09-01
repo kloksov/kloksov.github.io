@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Example KSlider</title>
+	
+	<script src="src/jquery-2.2.4.min.js"></script>
+	<!-- KSlider -->
+	<link rel="stylesheet" type="text/css" href="src/kslider.css" />
+	<script src="src/kslider.js"></script>
+	
+	<style>
+		body {
+			text-align: center;
+		}
+		.container {
+			display: inline-block;
+			width: 800px;
+		}
+		h1, h2 {
+			color: rgb(50,50,50);
+			text-align: center;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+	
+		<h1>KSlider - слайдер изображений на jQuery</h1>
+		<p><a href="https://github.com/kloksov/kslider">https://github.com/kloksov/kslider</a></p>
+		
+		<h2>Слайдер по умолчанию</h2>
+		
+		<div class="kslider" id="kslider">
+			<img src="imgs/img1.jpg" />
+			<img src="imgs/img2.jpg" />
+			<img src="imgs/img3.jpg" />
+			<img src="imgs/img4.jpg" />
+			<img src="imgs/img5.jpg" />
+		</div>
+		
+		<script>
+			$(function () {
+				
+				$('#kslider').kslider();
+				
+			});
+		</script>
+		
+		<h2>Настраиваем ширину, высоту слайдера и количество видимых изображений</h2>
+		
+		<div class="kslider" id="kslider2">
+			<img src="imgs/img1.jpg" />
+			<img src="imgs/img2.jpg" />
+			<img src="imgs/img3.jpg" />
+			<img src="imgs/img4.jpg" />
+			<img src="imgs/img5.jpg" />
+		</div>
+		
+		<script>
+			$(function () {
+				
+				$('#kslider2').kslider({
+					width: 800,
+					height: 400,
+					count_img: 2
+				});
+				
+			});
+		</script>
+		
+		<h2>Растягиваем изображения, меняем отступы и изменяем время анимации</h2>
+		
+		<div class="kslider" id="kslider3">
+			<img src="imgs/img1.jpg" />
+			<img src="imgs/img2.jpg" />
+			<img src="imgs/img3.jpg" />
+			<img src="imgs/img4.jpg" />
+			<img src="imgs/img5.jpg" />
+			<img src="imgs/img3.jpg" />
+			<img src="imgs/img2.jpg" />
+		</div>
+		
+		<script>
+			$(function () {
+				
+				$('#kslider3').kslider({
+					width: 800,
+					height: 120,
+					count_img: 5,
+					size_img: 'stretch',
+					margin_item: 2,
+					time_animate: 200
+				});
+				
+			});
+		</script>
+		
+		<h2>:)</h2>
+		
+	</div>
+</body>
+</html>
