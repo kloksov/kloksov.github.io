@@ -13,8 +13,8 @@
 	top: 0;
 	width: 60px;
 	height: 100%;
-	background-color: rgba(0,0,0,0.5);
-	color: rgb(255,255,255);
+	/*background-color: rgba(0,0,0,0.5);*/
+	color: rgb(180,180,180);
 	z-index: 10;
 	cursor: pointer;
 }
@@ -34,14 +34,14 @@
 }
 .kslider .next {
 	right: 0;
-	background: linear-gradient(to left, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+	/*background: linear-gradient(to left, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);*/
 }
 .kslider .next:before {
 	content: '\203A';
 }
 .kslider .prev {
 	left: 0;
-	background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+	/*background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);*/
 }
 .kslider .prev:before {
 	content: '\2039';

@@ -60,7 +60,7 @@ https://github.com/kloksov/kslider/
 				var margin_item = settings.margin_item;
 				var w_item = parseInt(width_body / settings.count_img) - margin_item - border_size * 2;
 				var h_item = height_body - margin_item * 2 - border_size * 2;
-				$('.one_item').css({
+				$(this).find('.one_item').css({
 					width: w_item,
 					height: h_item,
 				});
@@ -100,6 +100,7 @@ https://github.com/kloksov/kslider/
 							$(this).load();
 						}
 					});
+					
 				});
 				
 				// fixed center
@@ -108,6 +109,7 @@ https://github.com/kloksov/kslider/
 				
 				var $this = $(this);
 				var data = $this.data('kslider');
+				
 				var kslider = {
 					count_img: settings.count_img,
 					w_item: w_item,
