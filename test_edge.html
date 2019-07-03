@@ -44,6 +44,12 @@
   <div>DIV</div>
   
   <script>
+    for (var k = 0; k < 100; k++) {
+      var $el = document.createElement('div');
+      $el.innerHTML = 'DIV '+ k;
+      document.body.appendChild($el);
+    }
+    
     var start_time = new Date();
     
     var $divs = document.querySelectorAll('div');
