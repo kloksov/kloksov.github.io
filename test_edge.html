@@ -112,16 +112,16 @@
   <script>
     for (var k = 0; k < 100; k++) {
       var $el = document.createElement('div');
-      $el.innerHTML = 'DIV '+ k;
+      $el.innerHTML = '<input type="checkbox" /> "DIV '+ k;
       $el.setAttribute('data-type', 'test'+ k);
       document.body.appendChild($el);
     }
     
     var start_time = new Date();
     
-    var $divs = document.querySelectorAll('div');
-    for (var i = 0; i < $divs.length; i++) {
-      $divs[i].classList.add('temp_class');
+    var $checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    for (var i = 0; i < $checkboxes.length; i++) {
+      $checkboxes[i].parentNode.classList.add('temp_class');
     }
     
     alert(new Date() - start_time);
