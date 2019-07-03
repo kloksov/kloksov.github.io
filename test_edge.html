@@ -47,6 +47,7 @@
     for (var k = 0; k < 100; k++) {
       var $el = document.createElement('div');
       $el.innerHTML = 'DIV '+ k;
+      $el.setAttribute('data-type', 'test'+ k);
       document.body.appendChild($el);
     }
     
