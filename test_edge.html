@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div[data-type="test"] { color: #000; }
+    div[data-type="test2"] { color: #000; }
+    div[data-type="test3"] { color: #000; }
+    div[data-type="test4"] { color: #000; }
+    div[data-type="test5"] { color: #000; }
+    div[data-type="test6"] { color: #000; }
+    div[data-type="test7"] { color: #000; }
+    div[data-type="test8"] { color: #000; }
+    div[data-type="test9"] { color: #000; }
+    div[data-type="test10"] { color: #000; }
+    div[data-type="test11"] { color: #000; }
+    div[data-type="test12"] { color: #000; }
+    div[data-type="test13"] { color: #000; }
+    div[data-type="test14"] { color: #000; }
+    div[data-type="test15"] { color: #000; }
+    div[data-type="test16"] { color: #000; }
+    div[data-type="test17"] { color: #000; }
+    div[data-type="test18"] { color: #000; }
+    div[data-type="test19"] { color: #000; }
+    div[data-type="test20"] { color: #000; }
+    div[data-type="test21"] { color: #000; }
+    div[data-type="test22"] { color: #000; }
+    div[data-type="test23"] { color: #000; }
+    div[data-type="test24"] { color: #000; }
+    div[data-type="test25"] { color: #000; }
+    div[data-type="test26"] { color: #000; }
+    div[data-type="test27"] { color: #000; }
+    div[data-type="test28"] { color: #000; }
+    div[data-type="test29"] { color: #000; }
+    div[data-type="test30"] { color: #000; }
+    div[data-type="test31"] { color: #000; }
+    div[data-type="test32"] { color: #000; }
+    div[data-type="test33"] { color: #000; }
+    div[data-type="test34"] { color: #000; }
+    div[data-type="test35"] { color: #000; }
+  </style>
+</head>
+<body>
+  <div>test edge</div>
+  
+  <script>
+    var start_time = new Date();
+    
+    var $divs = document.querySelectorAll('div');
+    for (var i = 0; i < $divs.length; i++) {
+      $divs[i].classList.add('temp_class');
+    }
+    
+    alert(new Date() - start_time);
+  </script>
+</body>
+</html>
